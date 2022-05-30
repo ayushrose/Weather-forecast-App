@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <div class="main-container">
+    <div class="formStyle">
+    <form action="/" method="post">
+        <label for="cityInput" >City Name: </label>
+        <input type="text" name="cityName" id="cityInput" placeholder="Enter City Name">
+        <button type="submit">Search</button>
+    </form>
+    </div>
+    <div class="box">
+        <h1>The temperature in <%=city%> is <%=temp%> degrees.</h1>
+       
+        <h1> <%=weatherDescription%></h1>
+        <img src=<%=imgURL%>></img>
+   
+        <p class="text">Pressure: <%=pressure%> hPa</p>
+        <p class="text">Humidity: <%=humidity%> %</p>
+        <p class="text">Visibility: <%=visibility%> meter</p>
+         <h2 class="text">Wind: </h2>
+        <li class="text">Speed: <%=speed%> meter/sec</li>
+        <li class="text">Deg: <%=deg%></li>
+
+</div>
+</div>
+<footer class="footer ">
+        <p>Designed by Ayush &copy; <%=year%></p>
+</footer>
+</body>
+</html>
